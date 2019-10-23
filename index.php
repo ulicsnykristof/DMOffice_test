@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/jpg" href="pictures/icon.jpg">
-    <link rel="stylesheet" type="text/css" href="style/my-style.css">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="icon" type="image/jpg" href="public_html/image/layout/pictures/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="public_html/style/my-style.css">
+    <link rel="stylesheet" type="text/css" href="public_html/style/bootstrap.css">
     <title>DMOffice</title>
   </head>
 
@@ -34,7 +34,7 @@
     <!-- Login Form -->
     <div class="login-page">
       <div class="form">
-        <form class="login-form" action="includes/login_inc.php" method="POST">
+        <form class="login-form" action="libaries/login2.php" method="POST">
           <input name="uid" type="text" placeholder="username"/>
           <input name="pwd" type="password" placeholder="password"/>
           <select class="custom-select" name="select">
