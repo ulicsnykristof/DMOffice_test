@@ -55,28 +55,30 @@
       }
     }
   }*/
-  if(isset($_POST['submit'])){
-    require 'dbh_inc.php';
-    $select = $_POST['select'];
-    $uid = mysqli_real_escape_string($conn, $_POST['uid']);
-    $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
-    $sql = "SELECT * FROM user WHERE '$uid' = user_uid AND '$select' = user_role;";
-    $result = mysqli_query($conn, $sql);
-    if(mysqli_num_rows($result) == 0){
-      header('Location: ../../index.php?1');
-      exit();
-    }else{
-      if($select == 'User'){
-        header('Location: ../../index.php?2');
-        exit();
-      }elseif($select == 'Admin'){
-        header('Location: ../../index.php?3');
-        exit();
-      }else{
-        header('Location: ../../index.php?what');
-        exit();
-      }
-    }
 
+if(isset($_POST['submit'])){
+  echo 'haló';
+}
+require_once 'db_init.php';
+$select = $_POST['select'];
+$uid = mysqli_real_escape_string($conn, $_POST['uid']);
+$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+$sql = "SELECT * FROM user WHERE '$uid' = user_uid AND '$select' = user_role;";
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result) == 0){
+  header('Location: ../../index.php?1');
+  exit();
+}else{
+  if($select == 'User'){
+    header('Location: ../../index.php?2');
+    exit();
+  }elseif($select == 'Admin'){
+    header('Location: ../../index.php?3');
+    exit();
+  }else{
+    header('Location: ../../index.php?what');
+    exit();
+  }
+}
 
  ?>
