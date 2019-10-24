@@ -34,7 +34,7 @@
     <!-- Login Form -->
     <div class="login-page">
       <div class="form">
-        <form class="login-form" action="resources/libaries/login2.php" method="POST">
+        <form class="login-form" action="resources/libaries/login.php" method="POST">
           <input name="uid" type="text" placeholder="username"/>
           <input name="pwd" type="password" placeholder="password"/>
           <select class="custom-select" name="select">
