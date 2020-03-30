@@ -12,7 +12,7 @@
           </div>
           <div class="card-body text-center">
             <img class="card-img-top" src="../pics/admin_modify.png" alt="card.jpg">
-            <a class="btn btn-primary" href="admin_page_manage.php" style="margin-bottom: 16px; font-size: 18px; width: 100px;">Enter</a>
+            <a class="btn btn-primary" href="admin_manage.php" style="margin-bottom: 16px; font-size: 18px; width: 100px;">Enter</a>
             <p>List, add, modify and delete users</p>
           </div>
         </div>
