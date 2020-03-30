@@ -43,7 +43,7 @@
             <option value="User">User</option>
           </select>
           <button type="submit" name="submit" class="btn btn-secondary">login</button>
-          <p class="message">Not registered? <a href="#"> Talk to the IT guy</a></p>
+          <p class="message">Not registeredy? <a href="#"> Talk to the IT guy</a></p>
         </form>
       </div>
     </div>
