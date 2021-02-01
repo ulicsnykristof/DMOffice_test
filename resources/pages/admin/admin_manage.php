@@ -1,10 +1,8 @@
 <?php
-  include_once '../../templates/headers/admin_manage_header.php';
+
   session_start();
-  if(!isset($_SESSION['user_uid'])){
-    header('Location: login_page.php?error=you_have_to_login');
-    exit();
-  }
+
+  include_once '../../templates/headers/admin_manage_header.php';
  ?>
 
     <!-- Main -->
@@ -79,7 +77,7 @@
             </thead>
             <tbody>
               <?php
-                require '../includes/dbh_inc.php';
+                require '../../libaries/db_init.php';
                 $sql = "SELECT * FROM user;";
                 $result = mysqli_query($conn, $sql);
                 foreach ($result as $k => $v) {
