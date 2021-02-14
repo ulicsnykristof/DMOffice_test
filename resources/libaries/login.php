@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
           $stmt->execute();
           //end activity reg
           if($select == 'User'){
-            header('Location: ../pages/admin/user_main.php');
+            header('Location: ../pages/user/user_main.php');
             exit();
           }elseif($select == 'Admin'){
             header('Location: ../pages/admin/admin_main.php');
